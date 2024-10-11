@@ -27,11 +27,11 @@ if let diff = diff {
         print("You have selected imposible, why would you do this?")
     }
     let return1 = readLine()
-    if let return1 = return1{
+    if return1 != nil{
         print("You are walking down a mountain trail, it is getting late, and that party isn't helping")
         print("As you are walking you could have sworn you heard something behind you?")
         let return2 = readLine()
-        if let return2 = return2{
+        if return2 != nil{
             print("1. Power walk out of there")
             print("2. Turn around and see if you can find the noise")
             print("3. Shout out if anything is there")
@@ -79,10 +79,10 @@ if let diff = diff {
                     exit(8)
                 }
                 let return3 = readLine()
-                if let return3 = return3{
+                if return3 != nil{
                     print("After walking further down the trail you come to a cross roads, your foggy memory preventing you from remembering the right path")
                     let return4 = readLine()
-                    if let return4 = return4{
+                    if return4 != nil{
                         print("1. Take the left path")
                         print("2. Take the right path")
                         print("3. Forgo both paths and strike it down the middle")
@@ -94,11 +94,11 @@ if let diff = diff {
                             if (secondRespone.contains("1")){
                                 print("As you start walking down the left path, you grow more and more exaughted")
                                 let return8 = readLine()
-                                if let return8 = return8{
+                                if return8 != nil{
                                     if (diff.lowercased().contains("e")){
                                         print("Eventually you collapse to your exaughtion...")
                                         let return9 = readLine()
-                                        if let return9 = return9{
+                                        if return9 != nil{
                                             print("However as you wake up, you realize a kind soul found you and took you to a poliece station")
                                             print("You easily get home from here")
                                             exit(1)
@@ -108,11 +108,11 @@ if let diff = diff {
                                         print("You walk slower and slower")
                                         print("Eventually you can no longer go on, so you stop to take a break")
                                         let return9 = readLine()
-                                        if let return9 = return9{
+                                        if return9 != nil{
                                             if (diff.lowercased().contains("m")){
                                                 print("As you are walking over to take a break you notice someone ... Shia LaBeouf He's following you, about 30 feet back. He gets down on all fours and breaks into a sprint. He's gaining on you. Shia LaBeouf. You're looking for you car but you're all turned around. He's almost upon you now. And you can see there's blood on his face. My God, there's blood everywhere! Running for you life. He's brandishing a knife. Lurking in the shadows. Hollywood superstar Shia LaBeouf. Living in the woods (Shia LaBeouf). Killing for sport (Shia LaBeouf). Eating all the bodies. Actual cannibal Shia LaBeouf. Now it's dark, and you seem to have lost him. But you're hopelessly lost yourself. Stranded with a murderer. You creep silently through the underbrush. Aha! In the distance. A small cottage with a light on. Hope! You move stealthily toward it. But your leg! Ah! It's caught in a bear trap! Gnawing off your leg (quiet, quiet). Limping to the cottage (quiet, quiet). Now you're on the doorstep. Sitting inside. Shia LaBeouf. Sharpening an axe (Shia LaBeouf). But he doesn't hear you enter (Shia LaBeouf). You're sneaking up behind him. Strangling superstar, Shia LaBeouf. Fighting for your life with Shia LaBeouf. Wrestling a knife from Shia LaBeouf. Stab him in his kidney. Safe at last from Shia LaBeouf. You limp into the dark woods. Blood oozing from your stump leg. You've beaten Shia LaBeouf")
                                                 let return10 = readLine()
-                                                if let return10 = return10{
+                                                if return10 != nil{
                                                     print("Wait! He isn't dead (Shia surprise)! There's a gun to your head and death in his eyes! But you can do jiu-jitsu! Body slam superstar Shia LaBeouf! Legendary fight with Shia LaBeouf! Normal Tuesday night for Shia LaBeouf! You try to swing an axe at Shia LaBeouf! But blood is draining fast from your stump leg! He's dodging every swipe, he parries to the left! You counter to the right, you catch him in the neck! You're chopping his head now! You have just decapitated Shia LaBeouf! His head topples to the floor, expressionless! You fall to your knees and catch your breath! You're finally safe from Shia LaBeouf!")
                                                     print("You Win")
                                                     exit(8)
@@ -133,7 +133,7 @@ if let diff = diff {
                                 }
                                 print ("As you head down the right path the surrounding begin to look familiar")
                                 let return5 = readLine()
-                                if let return5 = return5{
+                                if return5 != nil{
                                     if (diff.lowercased().contains("e")){
                                         print("You start to see the lights of the city again, and as you get closer you return home")
                                         print("YOU WIN")
@@ -158,7 +158,7 @@ if let diff = diff {
                             if secondRespone.contains("3"){
                                 print("As you make your way through the bushes of the middle path, you spot something you didn't even know was in this area, a bear, maybe even an evil bear")
                                 let return5 = readLine()
-                                if let return5 = return5{
+                                if return5 != nil{
                                     print("1. Slowly make your way past the bear")
                                     print("2. Run back the way you came")
                                     if (diff.lowercased().contains("e")){
@@ -171,7 +171,15 @@ if let diff = diff {
                                             print("You look down at a broken branch, under your foot, and with a stampeed of steps, it's all over...")
                                             exit(8)
                                         }
-                                        print("Pleaes don't fogret to fill this out")
+                                        print ("As you head down the path the surrounding begin to look familiar")
+                                        let return15 = readLine()
+                                        if return15 != nil{
+                                            if (diff.lowercased().contains("e")){
+                                                print("You start to see the lights of the city again, and as you get closer you return home")
+                                                print("YOU WIN")
+                                                exit(1)
+                                            }
+                                        }
                                     }
                                 }
                             }
