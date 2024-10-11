@@ -14,7 +14,7 @@ if let pickGame = pickGame{
         
         print("Welcome to a Choose Your own Adventure")
         print("Some guidelines, press return when you have finised reading, when not told otherwise. Don't pick impossible. When given choices input the number next to it.")
-        print("Please select a dificulty, easy(e), medium(m), hard(m), impossible(i)")
+        print("Please select a dificulty, easy(e), medium(m), hard(h), impossible(i)")
         print("Easy will likely be done in one try, medium 2-3, hard may take a bit, and impossible isn't possible")
         
         let diff = readLine()
@@ -212,7 +212,8 @@ if let pickGame = pickGame{
                         print("Bots Turn")
                     }
                     if (currentValue == 1){
-                        print("1 + 1")
+                        currentValue+=Int.random(in: 1...4)
+                        print("1 + \(currentValue-1)")
                         currentValue = 2
                     }else if (currentValue == 2){
                         print("2 + 4")
@@ -249,7 +250,7 @@ if let pickGame = pickGame{
                         currentValue = 16
                     }else if (currentValue == 13){
                         print("13 + 3")
-                        currentValue = 2
+                        currentValue = 16
                     }else if (currentValue == 14){
                         print("14 + 2")
                         currentValue = 16
