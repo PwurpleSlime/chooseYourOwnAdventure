@@ -8,7 +8,7 @@
 import Foundation
 
 print("Welcome to a Choose Your own Adventure")
-print("Some gruidelines, press return when you have finised reading, when not told otherwise. Don't pick impossible. When given choices input the number next to it.")
+print("Some guidelines, press return when you have finised reading, when not told otherwise. Don't pick impossible. When given choices input the number next to it.")
 print("Please select a dificulty, easy(e), medium(m), hard(m), impossible(i)")
 print("Easy will likely be done in one try, medium 2-3, hard may take a bit, and impossible isn't possible")
 
